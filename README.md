@@ -21,7 +21,7 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Clone the repo [Bookstore](git@github.com:myelin0/Bookstore.git) to your local computer 
+### Clone the repo [Bookstore](git@github.com:myelin0/Book-store.git) to your local computer 
 
 ### Install
 run npm install on your terminal to install all the dependencies.
@@ -40,7 +40,7 @@ run npm start to open the project in your local server
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/myelin0/Bookstore/issues).
+Feel free to check the [issues page](https://github.com/myelin0/Book-store/issues).
 
 ## Show your support
 
