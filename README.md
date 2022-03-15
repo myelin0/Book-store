@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[..coming soon](https://livedemo.com)
+[..coming soon]()
 
 
 ## Getting Started
