@@ -18,7 +18,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
-.headwrap{
+.headwrap {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -192,11 +192,11 @@ hr {
   color: #fefefe; */
 
   width: 7rem;
-    height: 3.063rem;
-    border: none;
-    background-color: var(--accent-color);
-    font-family: var(--font);
-    font-size: 0.813rem;
-    font-weight: 500;
-    color: var(--white);
+  height: 3.063rem;
+  border: none;
+  background-color: var(--accent-color);
+  font-family: var(--font);
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--white);
 }
