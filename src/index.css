@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 243, 243);
+  font-family: 'Roboto Slab', serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: white;
+  gap: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.headwrap{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cms {
+  margin: 0;
+  color: #0290ff;
+}
+
+.nav-links {
+  font-size: 0.9em;
+  margin-top: 7px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.fa-user {
+  width: 1.8rem;
+  height: 1.8rem;
+  align-self: flex-end;
+  color: #0290ff;
+}
+
+.bookCard {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 10%;
+  padding: 20px 100px;
+}
+
+.otherInformation {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.statusIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.bookInformation {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.bookCategory {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bookTitle {
+  margin: 5px 0 0 0;
+}
+
+.author {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: #0290ff;
+}
+
+.bookDetails {
+  margin-bottom: 15px;
+}
+
+.commentsBtn,
+.removeBtn,
+.editBtn {
+  background: none;
+  border: none;
+  margin: 0;
+  color: #0290ff;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.bookButtons button:hover {
+  cursor: pointer;
+}
+
+.right-border {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+.status--information {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+  border-right: 1px solid gray;
+  padding-right: 50px;
+}
+
+.percent-number {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.text-completed {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.current-chapter {
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 300;
+}
+
+.chapterDetail {
+  margin-top: 5px;
+}
+
+.updateBtn {
+  border: none;
+  background-color: #0290ff;
+  color: #fefefe;
+  padding: 7px 25px;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.addnew-heading {
+  color: #888;
+}
+
+.book-form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.input-title {
+  border: 0.5px solid #888;
+  width: 50%;
+  padding: 8px 5px;
+}
+
+.category-input {
+  border: 0.5px solid #888;
+  width: 25%;
+  padding: 8px 5px;
+}
+
+.formBtn {
+  /* width: 15%;
+  border: none;
+  background-color: #0290ff;
+  color: #fefefe; */
+
+  width: 7rem;
+    height: 3.063rem;
+    border: none;
+    background-color: var(--accent-color);
+    font-family: var(--font);
+    font-size: 0.813rem;
+    font-weight: 500;
+    color: var(--white);
+}
