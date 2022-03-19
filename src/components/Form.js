@@ -14,6 +14,8 @@ const Form = () => {
 
   const dispatch = useDispatch();
   const [bookData, setBookData] = useState(setup());
+  const [Loader, setLoader] = useState(false);
+
   const { title, author, category } = bookData;
   const changeHandler = (e) => {
     setBookData((prevState) => ({
@@ -23,14 +25,28 @@ const Form = () => {
     }));
   };
 
-  const formHandler = (e) => {
+  const formHandler = async (e) => {
     e.preventDefault();
     if (title.trim() !== '' && author.trim() !== '') {
-      dispatch(addBook(bookData));
+      setLoader((prevState) => !prevState);
+      await dispatch(addBook(bookData));
       setBookData(setup());
+      setLoader((prevState) => !prevState);
     }
   };
-
+  let formButton = '';
+  if (Loader === false) {
+    formButton = <button type="submit" className="formBtn">ADD BOOK </button>;
+  } else {
+    formButton = (
+      <div
+        style={{
+          padding: '0.801rem 1.188rem 0.886rem 1.375rem',
+          marginTop: '30px',
+        }}
+      />
+    );
+  }
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
@@ -68,14 +84,14 @@ const Form = () => {
           <option value="Sci-fi">
             Science Fiction
           </option>
-          <option value="economy">
+          <option value="Economy">
             Economy
           </option>
           <option value="Coding">
             Coding
           </option>
         </select>
-        <button type="submit">Add Book</button>
+        { formButton }
       </form>
     </div>
   );
