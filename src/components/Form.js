@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
 import { addBook } from '../redux/books/books';
-import Spinner from '../spinner';
 
 const Form = () => {
   const setup = () => ({
@@ -45,9 +44,7 @@ const Form = () => {
           padding: '0.801rem 1.188rem 0.886rem 1.375rem',
           marginTop: '30px',
         }}
-      >
-        <Spinner width="25px" height="25px" />
-      </div>
+      />
     );
   }
   return (

@@ -1,8 +1,6 @@
 import ApiCalls from '../../helpers/ApiCall';
-// import { toogleSpinner } from '../../spinner';
 import { addBook, loadBooks, removeBook } from './books';
 
-// asynchronous actions
 export const addBookThunk = (bookItem) => async (dispatch) => {
   try {
     const response = await ApiCalls.addBooks(bookItem);
@@ -15,7 +13,6 @@ export const addBookThunk = (bookItem) => async (dispatch) => {
 };
 
 export const loadBookThunk = () => async (dispatch) => {
-  // dispatch(toogleSpinner(true));
   try {
     const response = await ApiCalls.fetchBooks();
 
@@ -32,8 +29,6 @@ export const loadBookThunk = () => async (dispatch) => {
     dispatch(loadBooks(data));
   } catch (err) {
     throw new Error(err);
-  // } finally {
-  //   dispatch(toogleSpinner(false));
   }
 };
 

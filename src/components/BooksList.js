@@ -3,14 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { loadBookThunk, removeBookThunk } from '../redux/books/bookThunks';
 import Book from './Book';
-// import Spinner from './Spinner';
 
 let fetched = false;
 
 const BookList = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.booksReducer.books);
-  // const spinner = useSelector((state) => state.spinnerReducer.status);
 
   const removeBookfromStore = (bookId) => {
     dispatch(removeBookThunk(bookId));
@@ -23,18 +21,10 @@ const BookList = () => {
     }
   }, []);
 
-  // if (spinner) {
-  //   return (
-  //     <div style={{ display: 'flex', justifyContent: 'center' }}>
-  //       <Spinner width="120px" height="120px" />
-  //     </div>
-  //   );
-  // }
-
   if (data.length === 0) {
     return (
       <div className="title" style={{ margin: '2.313rem 6.25rem 0' }}>
-        <h2>No books in store yet</h2>
+        <h2>No books saved</h2>
       </div>
     );
   }

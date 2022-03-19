@@ -1,12 +1,7 @@
-// books.js
-
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const LOAD_BOOKS = 'BOOKSTORE/BOOKS/LOAD_BOOKS';
-// const appUrl = 'ip5ptzJrFFOsjBhgcfxb';
 
-
-// const initialState = [];
 const initialState = { books: [] };
 export const addBook = (payload) => ({
   type: ADD_BOOK,
@@ -22,18 +17,6 @@ export const loadBooks = (payload) => ({
   payload,
 });
 
-// const reducer = (state = initialState, { type, payload }) => {
-//   switch (type) {
-//     case ADD_BOOK:
-//       return [...state, payload];
-//     case REMOVE_BOOK:
-//       return state.filter((book) => book.id !== payload);
-//     case LOAD_BOOKS:
-//       return [...payload];
-//     default:
-//       return state;
-//   }
-// };
 const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ADD_BOOK:
