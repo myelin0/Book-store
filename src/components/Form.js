@@ -49,10 +49,10 @@ const Form = () => {
   }
   return (
     <div>
-      <h2>ADD NEW BOOK</h2>
-      <form onSubmit={formHandler}>
+      <h2 className="addnew-heading">ADD NEW BOOK</h2>
+      <form className="book-form" onSubmit={formHandler}>
         <input
-          className="Title"
+          className="input-title"
           name="title"
           type="text"
           placeholder="Book Title"
@@ -71,6 +71,7 @@ const Form = () => {
         />
 
         <select
+          className="category-input"
           name="category"
           value={category}
           onChange={changeHandler}

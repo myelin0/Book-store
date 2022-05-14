@@ -7,6 +7,7 @@ import store from './redux/configureStore';
 import NavBar from './components/NavBar';
 import Books from './components/Books';
 import Categories from './components/Categories';
+import './index.css';
 
 ReactDOM.render(
   <Provider store={store}>
